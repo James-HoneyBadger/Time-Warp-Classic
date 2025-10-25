@@ -12,7 +12,7 @@ TimeWarp IDE is a comprehensive educational programming environment that support
 ## ✨ Features
 
 ### 🎯 Multi-Language Support
-TimeWarp IDE supports 6 programming languages, each representing different eras and paradigms:
+TimeWarp IDE supports 7 programming languages, each representing different eras and paradigms:
 
 - **PILOT** - Educational language with turtle graphics (1960s)
 - **BASIC** - Classic line-numbered programming (1960s)
@@ -20,6 +20,7 @@ TimeWarp IDE supports 6 programming languages, each representing different eras 
 - **Python** - Modern scripting language (1990s)
 - **JavaScript** - Web programming language (1990s)
 - **Perl** - Text processing powerhouse (1980s)
+- **Ruby** - Elegant object-oriented scripting (1990s)
 
 ### 🎨 Immersive Theme System
 8 beautifully crafted themes that transport you through computing eras:

@@ -1,0 +1,50 @@
+REM PILOT Example Program - Hello World with Turtle Graphics
+REM This program demonstrates basic PILOT commands and turtle graphics
+
+L:START
+T:🎨 Welcome to TimeWarp PILOT Programming!
+T:Let's draw some shapes with turtle graphics!
+
+REM Draw a square
+T:Drawing a square...
+U:SIZE=50
+T:FORWARD *SIZE*
+T:RIGHT 90
+T:FORWARD *SIZE*
+T:RIGHT 90
+T:FORWARD *SIZE*
+T:RIGHT 90
+T:FORWARD *SIZE*
+T:RIGHT 90
+
+REM Move to new position
+T:Moving to draw a triangle...
+T:PENUP
+T:FORWARD 100
+T:PENDOWN
+
+REM Draw a triangle
+T:Drawing a triangle...
+U:SIDES=3
+U:ANGLE=120
+T:FORWARD 60
+T:RIGHT *ANGLE*
+T:FORWARD 60
+T:RIGHT *ANGLE*
+T:FORWARD 60
+T:RIGHT *ANGLE*
+
+REM Interactive section
+T:Now let's get interactive!
+A:NAME
+T:Hello *NAME*! Thanks for trying PILOT programming!
+
+REM Math example
+U:X=15
+U:Y=25
+U:SUM=*X*+*Y*
+T:*X* + *Y* = *SUM*
+
+T:Program completed! Try modifying the SIZE and SIDES variables.
+END</content>
+<parameter name="filePath">/home/james/Time_Warp_Classic/hello_pilot.pilot

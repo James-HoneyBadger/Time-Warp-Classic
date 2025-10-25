@@ -1,0 +1,66 @@
+; Logo Example Program - Spiral Pattern
+; This program demonstrates Logo turtle graphics with procedures
+
+TO SPIRAL :size :angle :steps
+  IF :steps = 0 [STOP]
+  FORWARD :size
+  RIGHT :angle
+  SPIRAL :size + 2 :angle :steps - 1
+END
+
+TO DRAW_STAR :size
+  REPEAT 5 [
+    FORWARD :size
+    RIGHT 144
+  ]
+END
+
+TO MAIN
+  ; Clear screen and set up
+  CLEARSCREEN
+  PENUP
+  SETXY 0 0
+  PENDOWN
+
+  ; Draw title
+  SETPENSIZE 3
+  SETCOLOR "BLUE"
+  FORWARD 0  ; Just to show we're ready
+
+  ; Draw spiral
+  PRINT "Drawing a beautiful spiral..."
+  SETCOLOR "RED"
+  SPIRAL 5 15 50
+
+  ; Move to new position
+  PENUP
+  SETXY -150 100
+  PENDOWN
+
+  ; Draw star
+  PRINT "Now drawing a star..."
+  SETCOLOR "GREEN"
+  DRAW_STAR 80
+
+  ; Move to another position
+  PENUP
+  SETXY 100 -50
+  PENDOWN
+
+  ; Draw circle
+  PRINT "Finally, a circle..."
+  SETCOLOR "PURPLE"
+  REPEAT 36 [
+    FORWARD 5
+    RIGHT 10
+  ]
+
+  ; Finish
+  PENUP
+  SETXY 0 -150
+  SETCOLOR "BLACK"
+  PRINT "Logo graphics demo complete!"
+END
+
+MAIN</content>
+<parameter name="filePath">/home/james/Time_Warp_Classic/hello_logo.logo
